@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.forecast.temperature+" degrees, "+data.forecast.precipProbability+"% chance of rain, "+data.forecast.summary
+                messageTwo.textContent = data.forecast.temperature+" degrees, the higher temperature of the day was "+data.forecast.temperatureMax+" degrees "+data.forecast.precipProbability+"% chance of rain, "+data.forecast.summary
             }
         })
     })
